@@ -1,0 +1,2843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/icon.svg"
+      type="image/png"
+    />
+    <title>CineFlix Home</title>
+
+    <!--
+    - custom css link
+  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/mains.css" />
+    <link rel="stylesheet" href="./assets/css/media_query.css" />
+
+    <!--
+    - google font link
+  -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - main container
+  -->
+    <div class="container">
+      <!--
+      - #HEADER SECTION
+    -->
+
+      <header class="">
+        <div class="navbar">
+          <!--
+          - menu button for small screen
+        -->
+          <button class="navbar-menu-btn">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+          </button>
+
+          <a href="./index.html" class="navbar-brand">
+            <img src="./assets/images/logo.svg" class="logo" alt="" />
+          </a>
+
+          <!--
+          - navbar navigation
+        -->
+
+          <nav class="">
+            <div class="sidebar-header">
+              <a href="#" class="sidebar-brand">
+                <img src="./assets/images/logo.svg" alt="" />
+              </a>
+              <button class="sidebar-menu-btn">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+              </button>
+            </div>
+
+            <!-- links -->
+            <ul class="navbar-nav">
+              <li><a href="#" class="navbar-link">Home</a></li>
+              <li><a href="#" class="navbar-link">Category</a></li>
+              <li><a href="#live" class="navbar-link indicator">LIVE</a></li>
+            </ul>
+          </nav>
+
+          <!--
+          - search and sign-in
+        -->
+
+          <div class="navbar-actions">
+            <form action="#" class="navbar-form">
+              <input
+                type="text"
+                name="search"
+                placeholder="I'm looking for..."
+                class="navbar-form-search"
+              />
+
+              <button class="navbar-form-btn">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+
+              <button class="navbar-form-close">
+                <ion-icon name="close-circle-outline"></ion-icon>
+              </button>
+            </form>
+
+            <!--
+            - search button for small screen
+          -->
+
+            <button class="navbar-search-btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!--
+      - MAIN SECTION
+    -->
+      <main>
+        <!--
+        - #BANNER SECTION
+      -->
+
+        <span style="display: none">
+          <section class="banner">
+            <div class="banner-card">
+              <img
+                src="./assets/images/John-Wick-3.jpg"
+                class="banner-img"
+                alt=""
+              />
+
+              <div class="card-content">
+                <div class="card-info">
+                  <div class="genre">
+                    <ion-icon name="film"></ion-icon>
+                    <span>Action/Thriller</span>
+                  </div>
+
+                  <div class="year">
+                    <ion-icon name="calendar"></ion-icon>
+                    <span>2019</span>
+                  </div>
+
+                  <div class="duration">
+                    <ion-icon name="time"></ion-icon>
+                    <span>2h 11m</span>
+                  </div>
+
+                  <div class="quality">4K</div>
+                </div>
+
+                <h2 class="card-title">John Wick: Chapter 3 - Parabellum</h2>
+              </div>
+            </div>
+          </section>
+        </span>
+
+        <!--
+        - #MOVIES SECTION
+      -->
+        <section class="movies">
+          <!--
+          - filter bar
+        -->
+          <div class="filter-bar">
+            <div class="filter-radios desktop">
+              <input type="radio" name="grade" id="featured" checked />
+              <label for="featured">Featured</label>
+
+              <input type="radio" name="grade" id="popular" />
+              <label for="popular">Popular</label>
+
+              <input type="radio" name="grade" id="newest" />
+              <label for="newest">Newest</label>
+
+              <input type="radio" name="grade" id="action" />
+              <label for="action">Action</label>
+
+              <input type="radio" name="grade" id="thriller" />
+              <label for="thriller">Thriller</label>
+
+              <input type="radio" name="grade" id="trending" />
+              <label class="trending" for="trending">Trending</label>
+
+              <!-- <div class="checked-radio-bg"></div> -->
+            </div>
+
+            <div class="swiper-container radio-slider filter-radios">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <input type="radio" name="grade" id="featured" checked />
+                  <label for="featured">Featured</label>
+                </div>
+                <div class="swiper-slide">
+                  <input type="radio" name="grade" id="featured" checked />
+                  <label for="featured">Popular</label>
+                </div>
+                <div class="swiper-slide">
+                  <input type="radio" name="grade" id="featured" checked />
+                  <label for="featured">Newest</label>
+                </div>
+                <div class="swiper-slide">
+                  <input type="radio" name="grade" id="featured" checked />
+                  <label for="featured">Action</label>
+                </div>
+                <div class="swiper-slide">
+                  <input type="radio" name="grade" id="featured" checked />
+                  <label for="featured">Thriller</label>
+                </div>
+                <div class="swiper-slide">
+                  <input type="radio" name="grade" id="featured" checked />
+                  <label for="featured">Trending</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--
+          - Training
+        -->
+
+          <div class="training__header__box">
+            <div class="section-header">Training</div>
+            <button class="btn--all">See All</button>
+          </div>
+
+          <div class="row">
+            <div class="movies-grid">
+              <a href="iron-man-2008.html">
+                <div class="movie-card">
+                  <div class="card-head">
+                    <img
+                      src="./assets/images/movies/red-notice.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+
+                    <div class="card-overlay">
+                      <div class="rating">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <span>6.4</span>
+                      </div>
+
+                      <div class="play">
+                        <ion-icon name="play-circle-outline"></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+
+                    <div class="card-info">
+                      <span class="genre">Movies</span>
+                      <span class="year">2021</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/spider-men.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.4</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Spider-Man: Homecoming</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2017</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/matrix.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>N/A</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">The Matrix Resurrections</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Sci-fi/Action</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/eternals.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>6.8</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Eternals</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Adventure/Action</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/dune.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.2</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Dune</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Sci-fi/Adventure</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/1917.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.3</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">1917</h3>
+
+                  <div class="card-info">
+                    <span class="genre">War/Drama</span>
+                    <span class="year">2019</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/shang-chi.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.6</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">
+                    Shang-Chi and The Legend of The Ten Rings
+                  </h3>
+
+                  <div class="card-info">
+                    <span class="genre">Action/Fantasy</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/casino-royale.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.0</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Casino Royale</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2006</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/dark-knight.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>9.0</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">The Dark Knight</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2008</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/panther.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.3</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Black Panther</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2018</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/venom.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>6.7</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Venom</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2018</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/LOTR.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.9</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">
+                    Lord Of The Rings: Return Of The King
+                  </h3>
+
+                  <div class="card-info">
+                    <span class="genre">Fantasy/Adventure</span>
+                    <span class="year">2003</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--
+          - Latest
+        -->
+
+          <div class="section-header">Latest</div>
+
+          <div class="row">
+            <div class="movies-grid">
+              <a href="iron-man-2008.html">
+                <div class="movie-card">
+                  <div class="card-head">
+                    <img
+                      src="./assets/images/movies/red-notice.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+
+                    <div class="card-overlay">
+                      <div class="rating">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <span>6.4</span>
+                      </div>
+
+                      <div class="play">
+                        <ion-icon name="play-circle-outline"></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+
+                    <div class="card-info">
+                      <span class="genre">Movies</span>
+                      <span class="year">2021</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/spider-men.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.4</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Spider-Man: Homecoming</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2017</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/matrix.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>N/A</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">The Matrix Resurrections</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Sci-fi/Action</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/eternals.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>6.8</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Eternals</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Adventure/Action</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/dune.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.2</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Dune</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Sci-fi/Adventure</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/1917.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.3</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">1917</h3>
+
+                  <div class="card-info">
+                    <span class="genre">War/Drama</span>
+                    <span class="year">2019</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/shang-chi.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.6</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">
+                    Shang-Chi and The Legend of The Ten Rings
+                  </h3>
+
+                  <div class="card-info">
+                    <span class="genre">Action/Fantasy</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/casino-royale.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.0</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Casino Royale</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2006</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/dark-knight.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>9.0</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">The Dark Knight</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2008</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/panther.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.3</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Black Panther</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2018</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/venom.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>6.7</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Venom</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2018</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/LOTR.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.9</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">
+                    Lord Of The Rings: Return Of The King
+                  </h3>
+
+                  <div class="card-info">
+                    <span class="genre">Fantasy/Adventure</span>
+                    <span class="year">2003</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--
+          - Randoms
+        -->
+
+          <div class="section-header">Randoms</div>
+
+          <div class="row">
+            <div class="movies-grid">
+              <a href="iron-man-2008.html">
+                <div class="movie-card">
+                  <div class="card-head">
+                    <img
+                      src="./assets/images/movies/red-notice.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+
+                    <div class="card-overlay">
+                      <div class="rating">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <span>6.4</span>
+                      </div>
+
+                      <div class="play">
+                        <ion-icon name="play-circle-outline"></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+
+                    <div class="card-info">
+                      <span class="genre">Movies</span>
+                      <span class="year">2021</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/spider-men.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.4</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Spider-Man: Homecoming</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2017</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/matrix.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>N/A</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">The Matrix Resurrections</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Sci-fi/Action</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/eternals.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>6.8</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Eternals</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Adventure/Action</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/dune.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.2</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Dune</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Sci-fi/Adventure</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/1917.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.3</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">1917</h3>
+
+                  <div class="card-info">
+                    <span class="genre">War/Drama</span>
+                    <span class="year">2019</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/shang-chi.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.6</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">
+                    Shang-Chi and The Legend of The Ten Rings
+                  </h3>
+
+                  <div class="card-info">
+                    <span class="genre">Action/Fantasy</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/casino-royale.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.0</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Casino Royale</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2006</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/dark-knight.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>9.0</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">The Dark Knight</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2008</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/panther.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.3</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Black Panther</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2018</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/venom.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>6.7</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Venom</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2018</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/LOTR.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.9</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">
+                    Lord Of The Rings: Return Of The King
+                  </h3>
+
+                  <div class="card-info">
+                    <span class="genre">Fantasy/Adventure</span>
+                    <span class="year">2003</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--
+          - Movies  (see all)
+        -->
+
+          <div class="section-header">Movies (see all)</div>
+
+          <div class="row">
+            <div class="movies-grid">
+              <a href="iron-man-2008.html">
+                <div class="movie-card">
+                  <div class="card-head">
+                    <img
+                      src="./assets/images/movies/red-notice.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+
+                    <div class="card-overlay">
+                      <div class="rating">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <span>6.4</span>
+                      </div>
+
+                      <div class="play">
+                        <ion-icon name="play-circle-outline"></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+
+                    <div class="card-info">
+                      <span class="genre">Movies</span>
+                      <span class="year">2021</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/spider-men.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.4</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Spider-Man: Homecoming</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2017</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/matrix.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>N/A</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">The Matrix Resurrections</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Movies</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/eternals.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>6.8</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Eternals</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Adventure/Action</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/dune.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.2</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Dune</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Sci-fi/Adventure</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/1917.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.3</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">1917</h3>
+
+                  <div class="card-info">
+                    <span class="genre">War/Drama</span>
+                    <span class="year">2019</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/shang-chi.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.6</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">
+                    Shang-Chi and The Legend of The Ten Rings
+                  </h3>
+
+                  <div class="card-info">
+                    <span class="genre">Action/Fantasy</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/casino-royale.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.0</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Casino Royale</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2006</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/dark-knight.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>9.0</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">The Dark Knight</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2008</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/panther.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.3</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Black Panther</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2018</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/venom.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>6.7</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Venom</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2018</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/LOTR.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.9</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">
+                    Lord Of The Rings: Return Of The King
+                  </h3>
+
+                  <div class="card-info">
+                    <span class="genre">Fantasy/Adventure</span>
+                    <span class="year">2003</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--
+          - TV shows (see all)
+        -->
+
+          <div class="section-header">TV Shows (see all)</div>
+
+          <div class="row">
+            <div class="movies-grid">
+              <a href="iron-man-2008.html">
+                <div class="movie-card">
+                  <div class="card-head">
+                    <img
+                      src="./assets/images/movies/red-notice.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+
+                    <div class="card-overlay">
+                      <div class="rating">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <span>6.4</span>
+                      </div>
+
+                      <div class="play">
+                        <ion-icon name="play-circle-outline"></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+
+                    <div class="card-info">
+                      <span class="genre">Movies</span>
+                      <span class="year">2021</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/spider-men.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.4</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Spider-Man: Homecoming</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2017</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/matrix.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>N/A</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">The Matrix Resurrections</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Sci-fi/Action</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/eternals.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>6.8</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Eternals</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Adventure/Action</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/dune.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.2</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Dune</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Sci-fi/Adventure</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/1917.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.3</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">1917</h3>
+
+                  <div class="card-info">
+                    <span class="genre">War/Drama</span>
+                    <span class="year">2019</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/shang-chi.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.6</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">
+                    Shang-Chi and The Legend of The Ten Rings
+                  </h3>
+
+                  <div class="card-info">
+                    <span class="genre">Action/Fantasy</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/casino-royale.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.0</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Casino Royale</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2006</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/dark-knight.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>9.0</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">The Dark Knight</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2008</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/panther.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.3</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Black Panther</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2018</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/venom.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>6.7</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Venom</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2018</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/LOTR.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.9</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">
+                    Lord Of The Rings: Return Of The King
+                  </h3>
+
+                  <div class="card-info">
+                    <span class="genre">Fantasy/Adventure</span>
+                    <span class="year">2003</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--
+          - Anime  (see all)
+        -->
+
+          <div class="section-header">Anime (see all)</div>
+
+          <div class="row">
+            <div class="movies-grid">
+              <a href="iron-man-2008.html">
+                <div class="movie-card">
+                  <div class="card-head">
+                    <img
+                      src="./assets/images/movies/red-notice.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+
+                    <div class="card-overlay">
+                      <div class="rating">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <span>6.4</span>
+                      </div>
+
+                      <div class="play">
+                        <ion-icon name="play-circle-outline"></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <h3 class="card-title">Red Notice</h3>
+
+                    <div class="card-info">
+                      <span class="genre">Movies</span>
+                      <span class="year">2021</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/spider-men.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.4</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Spider-Man: Homecoming</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2017</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/matrix.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>N/A</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">The Matrix Resurrections</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Sci-fi/Action</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/eternals.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>6.8</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Eternals</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Adventure/Action</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/dune.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.2</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Dune</h3>
+
+                  <div class="card-info">
+                    <span class="genre">Sci-fi/Adventure</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/1917.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.3</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">1917</h3>
+
+                  <div class="card-info">
+                    <span class="genre">War/Drama</span>
+                    <span class="year">2019</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/shang-chi.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.6</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">
+                    Shang-Chi and The Legend of The Ten Rings
+                  </h3>
+
+                  <div class="card-info">
+                    <span class="genre">Action/Fantasy</span>
+                    <span class="year">2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/casino-royale.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.0</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Casino Royale</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2006</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/dark-knight.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>9.0</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">The Dark Knight</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2008</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/panther.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>7.3</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Black Panther</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2018</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/venom.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>6.7</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Venom</h3>
+
+                  <div class="card-info">
+                    <span class="genre">TV shows</span>
+                    <span class="year">2018</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-card">
+                <div class="card-head">
+                  <img
+                    src="./assets/images/movies/LOTR.jpg"
+                    alt=""
+                    class="card-img"
+                  />
+
+                  <div class="card-overlay">
+                    <div class="rating">
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>8.9</span>
+                    </div>
+
+                    <div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">
+                    Lord Of The Rings: Return Of The King
+                  </h3>
+
+                  <div class="card-info">
+                    <span class="genre">Fantasy/Adventure</span>
+                    <span class="year">2003</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--
+          - load more button
+        -->
+          <button class="load-more">LOAD MORE</button>
+        </section>
+
+        <!--
+        - #CATEGORY SECTION
+      -->
+        <section class="category" id="category">
+          <div class="section-header">All Movies</div>
+
+          <div class="category-grid">
+            <div class="category-card">
+              <img src="./assets/images/action.jpg" alt="" class="card-img" />
+              <div class="category-overlay"></div>
+              <div class="name">All Movies</div>
+            </div>
+
+            <div class="category-card">
+              <img src="./assets/images/comedy.jpg" alt="" class="card-img" />
+              <div class="category-overlay"></div>
+              <div class="name">Bollywood</div>
+            </div>
+
+            <div class="category-card">
+              <img
+                src="./assets/images/thriller.webp"
+                alt=""
+                class="card-img"
+              />
+              <div class="category-overlay"></div>
+              <div class="name">Hollywood</div>
+            </div>
+
+            <div class="category-card">
+              <img src="./assets/images/horror.jpg" alt="" class="card-img" />
+              <div class="category-overlay"></div>
+              <div class="name">Tollywood</div>
+            </div>
+
+            <div class="category-card">
+              <img
+                src="./assets/images/adventure.jpg"
+                alt=""
+                class="card-img"
+              />
+              <div class="category-overlay"></div>
+              <div class="name">Dhallywood</div>
+            </div>
+          </div>
+        </section>
+
+        <!--
+        - #CATEGORY SECTION
+      -->
+        <section class="category" id="category">
+          <div class="section-header">All Movies</div>
+
+          <div class="category-grid">
+            <div class="category-card">
+              <img
+                src="./assets/images/comedy.jpg"
+                alt="Marvel"
+                class="card-img"
+              />
+              <div class="category-overlay"></div>
+              <div class="name">Marvel</div>
+            </div>
+
+            <div class="category-card">
+              <img
+                src="./assets/images/comedy.jpg"
+                alt="Sony"
+                class="card-img"
+              />
+              <div class="category-overlay"></div>
+              <div class="name">Sony</div>
+            </div>
+
+            <div class="category-card">
+              <img src="./assets/images/comedy.jpg" alt="DC" class="card-img" />
+              <div class="category-overlay"></div>
+              <div class="name">DC</div>
+            </div>
+          </div>
+        </section>
+
+        <!--
+        - #CATEGORY SECTION
+      -->
+        <section class="category" id="category">
+          <div class="section-header">All Movies</div>
+
+          <div class="category-grid">
+            <div class="category-card">
+              <img src="./assets/images/comedy.jpg" alt="" class="card-img" />
+              <div class="category-overlay"></div>
+              <div class="name">Netflix</div>
+            </div>
+
+            <div class="category-card">
+              <img src="./assets/images/comedy.jpg" alt="" class="card-img" />
+              <div class="category-overlay"></div>
+              <div class="name">Disney Plus</div>
+            </div>
+
+            <div class="category-card">
+              <img src="./assets/images/comedy.jpg" alt="" class="card-img" />
+              <div class="category-overlay"></div>
+              <div class="name">Amazon Prime Video</div>
+            </div>
+
+            <div class="category-card">
+              <img
+                src="./assets/images/thriller.webp"
+                alt=""
+                class="card-img"
+              />
+              <div class="category-overlay"></div>
+              <div class="name">Sony LIV</div>
+            </div>
+
+            <div class="category-card">
+              <img src="./assets/images/action.jpg" alt="" class="card-img" />
+              <div class="category-overlay"></div>
+              <div class="name">ZEE5</div>
+            </div>
+          </div>
+        </section>
+
+        <!--
+        - #CATEGORY SECTION
+      -->
+        <section class="category" id="category">
+          <div class="section-header">All Movies</div>
+
+          <div class="category-grid">
+            <div class="category-card">
+              <img src="./assets/images/action.jpg" alt="" class="card-img" />
+              <div class="category-overlay"></div>
+              <div class="name">Korean Web Series</div>
+            </div>
+
+            <div class="category-card">
+              <img src="./assets/images/comedy.jpg" alt="" class="card-img" />
+              <div class="category-overlay"></div>
+              <div class="name">Chinese Web Series</div>
+            </div>
+
+            <div class="category-card">
+              <img
+                src="./assets/images/thriller.webp"
+                alt=""
+                class="card-img"
+              />
+              <div class="category-overlay"></div>
+              <div class="name">Japanese Web Series</div>
+            </div>
+
+            <div class="category-card">
+              <img src="./assets/images/horror.jpg" alt="" class="card-img" />
+              <div class="category-overlay"></div>
+              <div class="name">American Web Series</div>
+            </div>
+
+            <div class="category-card">
+              <img src="./assets/images/horror.jpg" alt="" class="card-img" />
+              <div class="category-overlay"></div>
+              <div class="name">Indian Web Series</div>
+            </div>
+
+            <div class="category-card">
+              <img src="./assets/images/horror.jpg" alt="" class="card-img" />
+              <div class="category-overlay"></div>
+              <div class="name">Bengali Web Series</div>
+            </div>
+
+            <div class="category-card">
+              <img
+                src="./assets/images/adventure.jpg"
+                alt=""
+                class="card-img"
+              />
+              <div class="category-overlay"></div>
+              <div class="name">Dhallywood</div>
+            </div>
+          </div>
+        </section>
+
+        <!--
+        - #CATEGORY SECTION
+      -->
+        <section class="category" id="category">
+          <div class="section-header">All Movies</div>
+
+          <div class="category-grid">
+            <div class="category-card">
+              <img src="./assets/images/comedy.jpg" alt="" class="card-img" />
+              <div class="category-overlay"></div>
+              <div class="name">Korean Drama</div>
+            </div>
+
+            <div class="category-card">
+              <img
+                src="./assets/images/thriller.webp"
+                alt=""
+                class="card-img"
+              />
+              <div class="category-overlay"></div>
+              <div class="name">Chinese Drama</div>
+            </div>
+
+            <div class="category-card">
+              <img src="./assets/images/horror.jpg" alt="" class="card-img" />
+              <div class="category-overlay"></div>
+              <div class="name">Japanese Drama</div>
+            </div>
+
+            <div class="category-card">
+              <img
+                src="./assets/images/adventure.jpg"
+                alt=""
+                class="card-img"
+              />
+              <div class="category-overlay"></div>
+              <div class="name">Turkish Drama</div>
+            </div>
+
+            <div class="category-card">
+              <img
+                src="./assets/images/adventure.jpg"
+                alt=""
+                class="card-img"
+              />
+              <div class="category-overlay"></div>
+              <div class="name">Bengali Drama</div>
+            </div>
+
+            <div class="category-card">
+              <img
+                src="./assets/images/adventure.jpg"
+                alt=""
+                class="card-img"
+              />
+
+              <div class="category-overlay"></div>
+              <div class="name">18+</div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!--
+      - FOOTER SECTION
+    -->
+      <footer>
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img src="./assets/images/logo.svg" alt="" class="footer-logo" />
+            <p class="slogan">
+              Movies & TV Shows, Online cinema, Movie database HTML Template.
+            </p>
+
+            <div class="social-link">
+              <a href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon class="logo-youtube" name="logo-youtube"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <ul>
+              <h4 class="link-heading">CineFlix</h4>
+
+              <li class="link-item"><a href="#">About us</a></li>
+              <li class="link-item"><a href="#">My profile</a></li>
+              <li class="link-item"><a href="#">Pricing plans</a></li>
+              <li class="link-item"><a href="#">Contacts</a></li>
+            </ul>
+
+            <ul>
+              <h4 class="link-heading">Browse</h4>
+
+              <li class="link-item"><a href="#">Live Tv</a></li>
+              <li class="link-item"><a href="#">Live News</a></li>
+              <li class="link-item"><a href="#">Live Sports</a></li>
+              <li class="link-item"><a href="#">Streaming Library</a></li>
+            </ul>
+
+            <ul>
+              <li class="link-item"><a href="#">TV Shows</a></li>
+              <li class="link-item"><a href="#">Movies</a></li>
+              <li class="link-item"><a href="#">Kids</a></li>
+              <li class="link-item"><a href="#">Collections</a></li>
+            </ul>
+
+            <ul>
+              <h4 class="link-heading">Help</h4>
+
+              <li class="link-item"><a href="#">Account & Billing</a></li>
+              <li class="link-item"><a href="#">Plans & Pricing</a></li>
+              <li class="link-item"><a href="#">Supported devices</a></li>
+              <li class="link-item"><a href="#">Accessibility</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <div class="copyright">
+            <p>&copy; copyright 2021 CineFlix</p>
+          </div>
+
+          <div class="wrapper">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms and conditions</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!--
+    - custom js link
+  -->
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main--s.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script>
+      var swiper = new Swiper(".radio-slider", {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        loop: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+            // centeredSlides: false,
+          },
+        },
+      });
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,611 @@
+/*-------------------------------------*\
+  #media_query.css
+\*-------------------------------------*/
+
+/**
+ * copyright 2021 @codewithsadee 
+ */
+
+/*-------------------------------------*\
+  #RESPONSIVE FOR 1200px
+\*-------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+  :root {
+    /**
+     * Spacing 
+     */
+
+    --px: 80px; /* padding-left & padding-right */
+  }
+
+  /**
+   * HEADER RESPONSIVE
+   */
+
+  /* header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 50;
+  } */
+
+  /* header.active {
+    top: 250px;
+  } */
+
+  /**
+   * small screen menu button style 
+   */
+
+  /*
+  .navbar-menu-btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: var(--px);
+    transform: translateY(-50%);
+  }
+
+  .navbar-brand {
+    margin-left: 50px;
+  }
+
+  .navbar-menu-btn span {
+    display: block;
+    background: var(--off-white);
+    width: 25px;
+    height: 2px;
+    margin: 8px;
+  }
+
+  .navbar-menu-btn .two {
+    width: 20px;
+  }
+  .navbar-menu-btn .three {
+    width: 15px;
+  }
+
+  .navbar-menu-btn.active span {
+    background: var(--light-azure);
+  }
+
+  .navbar-menu-btn.active .one {
+    transform: rotate(45deg) translateY(14px);
+  }
+
+  .navbar-menu-btn.active .two {
+    width: 0;
+  }
+
+  .navbar-menu-btn.active .three {
+    width: 25px;
+    transform: rotate(-45deg) translateY(-14px);
+  }
+*/
+  /* nav {
+    position: fixed;
+    top: -250px;
+
+    left: 0;
+    width: 100%;
+
+    z-index: 100;
+  }
+
+  nav.active {
+    top: 0;
+  } */
+
+  /*
+  .navbar-nav {
+    /* height: 250px; 
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: var(--px);
+    border-bottom: 1px solid var(--oxford-blue);
+  }
+
+  .navbar-nav li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  */
+
+  .navbar-form {
+    position: absolute;
+    top: 100%;
+    left: var(--px);
+    right: var(--px);
+    height: 100%;
+    background: var(--rich-black-fogra-29);
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .header .navbar-form {
+    height: 105px;
+  }
+
+  .navbar-form.active {
+    top: 0;
+  }
+
+  .navbar-form-search {
+    margin-right: 40px;
+  }
+
+  .navbar-form-btn {
+    right: 80px;
+  }
+
+  .navbar-form-close {
+    display: block;
+    padding-top: 4px;
+    opacity: 0.8;
+  }
+
+  .navbar-form-close:hover {
+    opacity: 1;
+  }
+
+  .navbar-form-close ion-icon {
+    font-size: 20px;
+    color: var(--light-azure);
+  }
+
+  .navbar-search-btn {
+    display: block;
+    margin-right: 100px;
+    padding-top: 5px;
+  }
+
+  .header .navbar-form-search {
+    background: rgba(29, 43, 64, 0.5);
+    width: 100%;
+    padding: 15px 16px;
+    border-radius: 19px;
+    color: var(--off-white);
+    font-size: 13px;
+    font-weight: var(--fw-4);
+  }
+  /* .header .navbar-form.active {
+    top: 0;
+  } */
+
+  /**
+   * BANNER SECTION RESPONSIVE
+   */
+
+  .banner {
+    margin-top: 100px;
+  }
+
+  .banner-card .card-title {
+    font-size: 2.5em;
+  }
+
+  /**
+   * CATEGORY SECTION RESPONSIVE
+   */
+
+  .category-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  /**
+   * FOOTER SECTION RESPONSIVE
+   */
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-brand {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  }
+
+  /* ************************* PAGE IRON MAN ************************* */
+  /**
+   * SIMILAR SECTION RESPONSIVE
+   */
+
+  .similar__movies__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*-------------------------------------*\
+  #RESPONSIVE FOR 1024px
+\*-------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+  :root {
+    /**
+     * Spacing 
+     */
+
+    --px: 60px; /* padding-left & padding-right */
+  }
+
+  /**
+   * BANNER SECTION 
+   */
+  .banner-card .card-content {
+    bottom: 40px;
+    left: 60px;
+    right: 60px;
+  }
+
+  /* ************************* PAGE IRON MAN ************************* */
+
+  .film__grid {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+
+    justify-items: center;
+  }
+  /**
+   * SIMILAR SECTION RESPONSIVE
+   */
+
+  .similar__movies__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*-------------------------------------*\
+  #RESPONSIVE FOR 820px
+\*-------------------------------------*/
+
+@media screen and (max-width: 820px) {
+  .aside__text__box--1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 90px;
+  }
+
+  .aside__text__box--2 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*-------------------------------------*\
+  #RESPONSIVE FOR 768px
+\*-------------------------------------*/
+
+@media screen and (max-width: 768px) {
+  :root {
+    /**
+     * Spacing 
+     */
+
+    --px: 40px; /* padding-left & padding-right */
+  }
+
+  /**
+   * BANNER SECTION 
+   */
+
+  .banner {
+    display: none;
+  }
+
+  .desktop {
+    display: none !important;
+  }
+
+  .swiper-container {
+    display: block;
+    overflow: hidden;
+  }
+
+  /* .movie-card {
+    width: 100%;
+  } */
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  /**
+   * MOVIE SECTION
+   */
+
+  .movies {
+    margin-top: 120px;
+  }
+
+  /**
+   * filter bar responsive
+   */
+  .filter-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-bar select {
+    margin-bottom: 20px;
+  }
+
+  .filter-radios {
+    width: 100%;
+  }
+
+  nav {
+    max-width: 300px;
+  }
+
+  .sidebar-header {
+    margin-top: -0px;
+  }
+  .footer-brand {
+    text-align: center;
+  }
+  .footer-logo {
+    margin: 0 auto 0 98px;
+  }
+
+  .social-link .logo-youtube {
+    margin-right: 0;
+  }
+
+  .footer-content {
+    align-items: center;
+  }
+
+  .footer-links {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .modal {
+    max-width: 96%;
+    padding: 20px;
+  }
+
+  .separator-box {
+    padding: 0 20px;
+  }
+
+  .search-body footer {
+    text-align: center;
+  }
+
+  .search-body .footer__copyright {
+    margin: 0 auto;
+  }
+
+  .search-body .footer__nav {
+    align-items: center;
+  }
+
+  .search-body .footer_logo {
+    position: absolute;
+    top: 10%;
+    left: 57%;
+    transform: translateX(-50%);
+  }
+
+  .search-body .search-footer-logobox {
+    margin: 40px auto 0 auto;
+    position: relative;
+  }
+
+  /* ************************* PAGE IRON MAN ************************* */
+
+  .film__info__row--1 {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+
+    justify-items: flex-start;
+    column-gap: 15px;
+    row-gap: 33px;
+    margin-bottom: 35px;
+  }
+
+  .film__lang__box {
+    margin-left: -58px;
+  }
+
+  .film__global__box-last {
+    margin-left: -10px;
+  }
+
+  .details__heading__box {
+    flex-direction: column;
+  }
+
+  .ss__heading {
+    margin: 0 0 32px 0;
+    text-align: center;
+  }
+
+  .similar__heading {
+    margin-left: 0px;
+  }
+
+  .show__img {
+    height: 260px;
+    border-radius: 15px;
+  }
+
+  /**
+   * SIMILAR SECTION RESPONSIVE
+   */
+}
+
+/*-------------------------------------*\
+  #RESPONSIVE FOR 575px
+\*-------------------------------------*/
+
+@media screen and (max-width: 575px) {
+  :root {
+    /**
+     * Spacing 
+     */
+
+    --px: 20px; /* padding-left & padding-right */
+
+    /**
+     * Typography 
+     */
+    --section-heading: 32px;
+    --fs-lg: 20px;
+  }
+
+  .container--global {
+    padding: 0 20px;
+  }
+
+  .header .navbar-form {
+    left: 0px;
+  }
+  .navbar-search-btn {
+    margin-right: 20px;
+  }
+
+  .navbar-form-search {
+    margin-right: 20px;
+  }
+
+  .navbar-form-btn {
+    right: 55px;
+  }
+
+  /**
+   * FOOTER SECTION RISPONSIVE
+   */
+
+  .footer-copyright {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .wrapper {
+    margin-bottom: 20px;
+  }
+
+  /* ************************* PAGE IRON MAN ************************* */
+
+  .header .navbar-form {
+    height: 100px;
+  }
+  .header .navbar {
+    height: 90px;
+  }
+
+  .heading__primary {
+    font-size: 40px;
+  }
+
+  .section__film {
+    padding: 30px 0 120px;
+  }
+
+  .film__items {
+    flex-wrap: wrap;
+  }
+
+  .film__info__container {
+    padding-left: 20px;
+  }
+
+  .film__description__container {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .details__heading {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .aside__text__box--1 {
+    font-size: 17px;
+  }
+
+  .aside2__container--1,
+  .aside2__container--2 {
+    flex-direction: column;
+  }
+
+  .similar__heading {
+    font-size: 30px;
+  }
+
+  .similar__movies__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 60px;
+  }
+
+  .section__trailer {
+    padding: 150px 0 150px;
+  }
+
+  .section__aside {
+    padding: 0 0 130px;
+  }
+
+  .show__img {
+    height: 250px;
+  }
+}
+
+/*-------------------------------------*\
+  #RESPONSIVE FOR 450px
+\*-------------------------------------*/
+
+@media screen and (max-width: 450px) {
+  .main__table thead th {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .main__table-text {
+    justify-content: center;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .show__img {
+    height: 240px;
+  }
+
+  .main__table tbody td .tb-col-last {
+    padding-right: 15px;
+  }
+
+  .main__table thead .tb-col-last {
+    padding-right: 15px;
+  }
+}
+
+/*-------------------------------------*\
+  #RESPONSIVE FOR 350px
+\*-------------------------------------*/
+
+@media screen and (max-width: 350px) {
+  .similar__movies__container {
+    grid-template-columns: 1fr;
+  }
+
+  .show__img {
+    height: 250px;
+  }
+}
