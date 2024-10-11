@@ -328,7 +328,7 @@
    */
 
   .movies {
-    margin-top: 120px;
+    margin-top: 60px;
   }
 
   /**
@@ -358,7 +358,10 @@
     text-align: center;
   }
   .footer-logo {
-    margin: 0 auto 0 98px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    left: 15%;
   }
 
   .social-link .logo-youtube {

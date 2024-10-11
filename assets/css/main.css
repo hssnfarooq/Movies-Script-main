@@ -1656,7 +1656,7 @@ body::-webkit-scrollbar-thumb {
 .catalog__paginator-wrap--comments {
   margin: 30px auto;
 }
-.catalog__pages {
+.paginator-text {
   display: none;
 }
 .catalog__paginator {

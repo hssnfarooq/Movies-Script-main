@@ -65,10 +65,12 @@ document.addEventListener("keydown", function (e) {
 });
 */
 const modal = document.querySelector(".modal");
+const howto = document.querySelector(".howto");
 const overlay = document.querySelector(".overlay");
 const btnOpenModal = document.querySelector(".btn--download");
+const closeModalButton = document.querySelector(".close-modal");
 
-const openModal = function () {
+const openModal = function (modal) {
   modal.classList.remove("hidden"); // Show the modal
   overlay.classList.remove("hidden"); // Show the overlay
 
@@ -77,7 +79,7 @@ const openModal = function () {
   overlay.classList.add("show"); // Show overlay smoothly
 };
 
-const closeModal = function () {
+const closeModal = function (modal) {
   // Add pop-out animation to the modal and fade-out for overlay
   modal.style.animation = "modalPopOut 0.5s ease forwards";
 
@@ -99,15 +101,19 @@ const closeModal = function () {
 };
 
 // Close modal only when clicking on the overlay, not the modal itself
-// overlay.addEventListener("click", function (e) {
-//   // Check if the click is outside the modal
-//   if (e.target === overlay) {
-//     closeModal();
-//   }
-// });
+overlay.addEventListener("click", function (e) {
+  // Check if the click is outside the modal
+  if (e.target === overlay) {
+    closeModal();
+  }
+});
+
+closeModalButton.addEventListener("click", function () {
+  closeModal();
+});
 
 // Open modal on button click
-// btnOpenModal.addEventListener("click", openModal);
+btnOpenModal.addEventListener("click", openModal);
 
 // Close modal on Escape key
 document.addEventListener("keydown", function (e) {

@@ -323,6 +323,28 @@ nav {
   display: none;
 }
 
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 20px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #747474;
+  border-radius: 20px;
+}
+
 .navbar-signin {
   display: flex;
   align-items: center;
@@ -416,6 +438,7 @@ nav {
 
 .movies {
   margin-bottom: 325px;
+  margin-top: 50px;
 }
 
 /**
@@ -611,6 +634,15 @@ input ~ .checked-radio-bg {
   color: var(--light-azure);
   transform: scale(var(--scale));
 }
+.movie-card .label-1,
+.movie-card .label-2 {
+  position: absolute;
+  top: 10px;
+  padding: 6px;
+  border-radius: 10px;
+  color: var(--light-azure);
+  transform: scale(var(--scale));
+}
 
 .movie-card .bookmark {
   background: var(--oxford-blue);
@@ -619,6 +651,34 @@ input ~ .checked-radio-bg {
 
 .movie-card .bookmark:hover {
   color: var(--yellow);
+}
+
+.movie-card .label-1 {
+  display: flex;
+  align-items: center;
+  background: var(--main-color);
+}
+
+.movie-card .label-1 span {
+  color: var(--white);
+  font-size: 13px;
+  font-weight: var(--fw-5);
+  margin-left: 5px;
+}
+
+.movie-card .label-2 {
+  display: flex;
+  align-items: center;
+  right: 1px;
+  top: 86%;
+  background: #142f40;
+}
+
+.movie-card .label-2 span {
+  color: var(--white);
+  font-size: 13px;
+  font-weight: var(--fw-5);
+  margin-left: 5px;
 }
 
 .movie-card .rating {
@@ -655,6 +715,10 @@ input ~ .checked-radio-bg {
 
 .movie-card:hover :is(.bookmark, .rating, .play) {
   --scale: 1;
+}
+
+.movie-card:hover :is(.label-1, .label-2) {
+  --scale: 0;
 }
 
 .movie-card .card-title {
@@ -889,7 +953,8 @@ footer {
 }
 
 .footer-logo {
-  width: 100px;
+  width: 200px;
+  height: 30px;
   margin-bottom: 30px;
 }
 

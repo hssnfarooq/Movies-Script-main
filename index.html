@@ -14,6 +14,101 @@
     <!--
     - custom css link
   -->
+    <style>
+      /* Desktop view */
+      .homepage-slider {
+        width: 100%;
+        height: 400px; /* Adjust as per your desktop design */
+      }
+
+      .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .connection {
+        position: fixed;
+        bottom: 50px;
+        left: 50px;
+        width: 460px;
+        height: 70px;
+        background: #242526;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.5s;
+        z-index: 1000;
+      }
+      .connection p {
+        font-size: 14px;
+        color: #fff;
+        font-weight: 300;
+      }
+      .connection .refreshBtn {
+        font-size: 16px;
+        margin-left: 10px;
+        text-decoration: none;
+        color: #469aff;
+      }
+      .connection .wifi-off {
+        margin-right: 20px;
+        font-size: 26px;
+        color: #7c7c7c;
+      }
+      .connection .close {
+        margin-left: 20px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        background: #474747;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+      }
+      .connection .wifi {
+        color: #029702;
+        font-size: 26px;
+        margin-right: 20px;
+      }
+      .online.active {
+        width: 420px;
+        transform: translateX(0%);
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .offline.active {
+        transform: translateX(0%);
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      /* Mobile view */
+      @media screen and (max-width: 768px) {
+        .homepage-slider {
+          width: 100%;
+          height: 200px; /* Adjust height for landscape in mobile */
+        }
+
+        .swiper-slide img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    </style>
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -34,6 +129,19 @@
     <!--
     - main container
   -->
+    <div class="connections">
+      <div class="connection offline">
+        <i class="material-icons wifi-off">wifi_off</i>
+        <p>you are currently offline</p>
+        <a href="#" class="refreshBtn">Refresh</a>
+        <i class="material-icons close">close</i>
+      </div>
+      <div class="connection online">
+        <i class="material-icons wifi">wifi</i>
+        <p>your Internet connection was restored</p>
+        <i class="material-icons close">close</i>
+      </div>
+    </div>
     <div class="container">
       <!--
       - #HEADER SECTION
@@ -95,9 +203,9 @@
                 <ion-icon name="search-outline"></ion-icon>
               </button>
 
-              <button class="navbar-form-close">
+              <span class="navbar-form-close">
                 <ion-icon name="close-circle-outline"></ion-icon>
-              </button>
+              </span>
             </form>
 
             <!--
@@ -154,9 +262,53 @@
           </section>
         </span>
 
+        <!-- Home Page Slider -->
+        <div class="homepage-slider swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <img src="./assets/images/action.jpg" alt="Slide 1" />
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <img src="./assets/images/sci-fi.jpg" alt="Slide 2" />
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/spider-man-no-way-home.jpg"
+                alt="Slide 3"
+              />
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <img src="./assets/images/action.jpg" alt="Slide 4" />
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <img src="./assets/images/sci-fi.jpg" alt="Slide 5" />
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/spider-man-no-way-home.jpg"
+                alt="Slide 6"
+              />
+            </div>
+
+            <!-- Add more slides as needed -->
+          </div>
+        </div>
+
         <!--
         - #MOVIES SECTION
       -->
+
         <section class="movies">
           <!--
           - filter bar
@@ -191,24 +343,24 @@
                   <label for="featured">Featured</label>
                 </div>
                 <div class="swiper-slide">
-                  <input type="radio" name="grade" id="featured" checked />
-                  <label for="featured">Popular</label>
+                  <input type="radio" name="grade" id="popular" />
+                  <label for="popular">Popular</label>
                 </div>
                 <div class="swiper-slide">
-                  <input type="radio" name="grade" id="featured" checked />
-                  <label for="featured">Newest</label>
+                  <input type="radio" name="grade" id="newest" />
+                  <label for="newest">Newest</label>
                 </div>
                 <div class="swiper-slide">
-                  <input type="radio" name="grade" id="featured" checked />
-                  <label for="featured">Action</label>
+                  <input type="radio" name="grade" id="action" />
+                  <label for="action">Action</label>
                 </div>
                 <div class="swiper-slide">
-                  <input type="radio" name="grade" id="featured" checked />
-                  <label for="featured">Thriller</label>
+                  <input type="radio" name="grade" id="thriller" />
+                  <label for="thriller">Thriller</label>
                 </div>
                 <div class="swiper-slide">
-                  <input type="radio" name="grade" id="featured" checked />
-                  <label for="featured">Trending</label>
+                  <input type="radio" name="grade" id="trending" />
+                  <label class="trending" for="trending">Trending</label>
                 </div>
               </div>
             </div>
@@ -234,6 +386,10 @@
                       class="card-img"
                     />
 
+                    <div class="label-1">
+                      <span>New Added</span>
+                    </div>
+
                     <div class="card-overlay">
                       <div class="rating">
                         <ion-icon name="star-outline"></ion-icon>
@@ -243,6 +399,10 @@
                       <div class="play">
                         <ion-icon name="play-circle-outline"></ion-icon>
                       </div>
+                    </div>
+
+                    <div class="label-2">
+                      <span>Dual Audio</span>
                     </div>
                   </div>
 
@@ -264,6 +424,9 @@
                     alt=""
                     class="card-img"
                   />
+                  <div class="label-1">
+                    <span>New Added</span>
+                  </div>
 
                   <div class="card-overlay">
                     <div class="rating">
@@ -274,6 +437,9 @@
                     <div class="play">
                       <ion-icon name="play-circle-outline"></ion-icon>
                     </div>
+                  </div>
+                  <div class="label-2">
+                    <span>Dual Audio</span>
                   </div>
                 </div>
 
@@ -325,6 +491,10 @@
                     class="card-img"
                   />
 
+                  <div class="label-1">
+                    <span>New Added</span>
+                  </div>
+
                   <div class="card-overlay">
                     <div class="rating">
                       <ion-icon name="star-outline"></ion-icon>
@@ -334,6 +504,9 @@
                     <div class="play">
                       <ion-icon name="play-circle-outline"></ion-icon>
                     </div>
+                  </div>
+                  <div class="label-2">
+                    <span>Dual Audio</span>
                   </div>
                 </div>
 
@@ -2818,10 +2991,44 @@
     - ionicon link
   -->
     <script>
+      const offlineConnection = document.querySelector(".offline");
+      const onlineConnection = document.querySelector(".online");
+      const closeBtn = document.querySelectorAll(".close");
+      const refreshBtn = document.querySelector(".refreshBtn");
+      function online() {
+        offlineConnection.classList.remove("active");
+        onlineConnection.classList.add("active");
+      }
+      function offline() {
+        offlineConnection.classList.add("active");
+        onlineConnection.classList.remove("active");
+      }
+      window.addEventListener("online", () => {
+        online();
+        setTimeout(() => {
+          onlineConnection.classList.remove("active");
+        }, 5000);
+      });
+      window.addEventListener("offline", () => {
+        offline();
+      });
+      for (let i = 0; i < closeBtn.length; i++) {
+        closeBtn[i].addEventListener("click", () => {
+          closeBtn[i].parentNode.classList.remove("active");
+          if (closeBtn[i].parentNode.classList.contains("offline")) {
+            setTimeout(() => {
+              closeBtn[i].parentNode.classList.add("active");
+            }, 500);
+          }
+        });
+      }
+      refreshBtn.addEventListener("click", () => {
+        window.location.reload();
+      });
+
       var swiper = new Swiper(".radio-slider", {
         slidesPerView: 4,
         spaceBetween: 10,
-        loop: true,
         breakpoints: {
           768: {
             slidesPerView: 3,
@@ -2829,7 +3036,26 @@
           },
         },
       });
+
+      var swiper = new Swiper(".homepage-slider", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        speed: 1000,
+        centeredSlides: true /* Centers the current slide */,
+        slidesPerView: 1.15 /* Shows 1 full slide and part of next/previous slides */,
+        spaceBetween: 15 /* Space between slides (in px) */,
+        breakpoints: {
+          768: {
+            slidesPerView: 3 /* On larger screens, show 3 slides at once */,
+            spaceBetween: 30,
+          },
+        },
+      });
     </script>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

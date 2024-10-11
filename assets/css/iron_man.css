@@ -373,8 +373,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  width: 30%;
   position: relative;
+  margin: 0 auto;
+}
+
+.plyr {
+  border-radius: 20px;
 }
 .trailer__img {
   max-width: 365px;
@@ -572,6 +577,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Modal close button */
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--main-color); /* Change to white if you prefer a lighter button */
+}
+
+.close-modal:hover {
+  color: #f00; /* Optional: Change color on hover */
 }
 
 /* Keyframe animation for scaling from 0 -> 0.8 -> 1 */
@@ -801,11 +822,15 @@ body {
   }
 
   .movie-card {
-    width: 100%;
+    width: 180px;
+    /* height: 250px; */
   }
 
   .swiper-slide {
     display: flex;
     justify-content: center;
+  }
+  .trailer__img__box {
+    width: 70%;
   }
 }
