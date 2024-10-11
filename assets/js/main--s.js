@@ -70,7 +70,7 @@ const overlay = document.querySelector(".overlay");
 const btnOpenModal = document.querySelector(".btn--download");
 const closeModalButton = document.querySelector(".close-modal");
 
-const openModal = function (modal) {
+const openModal = function () {
   modal.classList.remove("hidden"); // Show the modal
   overlay.classList.remove("hidden"); // Show the overlay
 
@@ -79,7 +79,7 @@ const openModal = function (modal) {
   overlay.classList.add("show"); // Show overlay smoothly
 };
 
-const closeModal = function (modal) {
+const closeModal = function () {
   // Add pop-out animation to the modal and fade-out for overlay
   modal.style.animation = "modalPopOut 0.5s ease forwards";
 
