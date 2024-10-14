@@ -318,6 +318,12 @@
     width: 100%;
   } */
 
+  .movie-card .label-slider {
+    width: 90px;
+    right: 73%;
+    top: 0;
+  }
+
   .swiper-slide {
     display: flex;
     justify-content: center;
@@ -351,6 +357,10 @@
 
   nav {
     max-width: 300px;
+  }
+
+  .header__menu {
+    left: 30px;
   }
 
   .sidebar-header {

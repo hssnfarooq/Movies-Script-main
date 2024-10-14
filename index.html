@@ -18,7 +18,7 @@
       /* Desktop view */
       .homepage-slider {
         width: 100%;
-        height: 400px; /* Adjust as per your desktop design */
+        height: 450px; /* Adjust as per your desktop design */
       }
 
       .swiper-slide img {
@@ -100,7 +100,7 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
-          border-radius: 5px;
+          border-radius: 10px;
         }
 
         .swiper-slide {
@@ -152,10 +152,10 @@
           <!--
           - menu button for small screen
         -->
-          <button class="navbar-menu-btn">
-            <span class="one"></span>
-            <span class="two"></span>
-            <span class="three"></span>
+          <button class="header__menu" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
 
           <a href="./index.html" class="navbar-brand">
@@ -266,39 +266,135 @@
         <div class="homepage-slider swiper">
           <div class="swiper-wrapper">
             <!-- Slide 1 -->
-            <div class="swiper-slide">
+            <div class="swiper-slide movie-card">
               <img src="./assets/images/action.jpg" alt="Slide 1" />
+              <div class="label-1 label-slider">
+                <span>New Added</span>
+              </div>
+              <div class="card-overlay">
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>6.4</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="label-2">
+                <span>Dual Audio</span>
+              </div>
             </div>
 
             <!-- Slide 2 -->
-            <div class="swiper-slide">
+            <div class="swiper-slide movie-card">
               <img src="./assets/images/sci-fi.jpg" alt="Slide 2" />
+              <div class="label-1 label-slider">
+                <span>New Added</span>
+              </div>
+              <div class="card-overlay">
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>6.4</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="label-2">
+                <span>Dual Audio</span>
+              </div>
             </div>
 
             <!-- Slide 3 -->
-            <div class="swiper-slide">
+            <div class="swiper-slide movie-card">
               <img
                 src="./assets/images/spider-man-no-way-home.jpg"
                 alt="Slide 3"
               />
+              <div class="label-1 label-slider">
+                <span>New Added</span>
+              </div>
+              <div class="card-overlay">
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>6.4</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="label-2">
+                <span>Dual Audio</span>
+              </div>
             </div>
 
             <!-- Slide 4 -->
-            <div class="swiper-slide">
+            <div class="swiper-slide movie-card">
               <img src="./assets/images/action.jpg" alt="Slide 4" />
+              <div class="label-1 label-slider">
+                <span>New Added</span>
+              </div>
+              <div class="card-overlay">
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>6.4</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="label-2">
+                <span>Dual Audio</span>
+              </div>
             </div>
 
             <!-- Slide 5 -->
-            <div class="swiper-slide">
+            <div class="swiper-slide movie-card">
               <img src="./assets/images/sci-fi.jpg" alt="Slide 5" />
+              <div class="label-1 label-slider">
+                <span>New Added</span>
+              </div>
+              <div class="card-overlay">
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>6.4</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="label-2">
+                <span>Dual Audio</span>
+              </div>
             </div>
 
             <!-- Slide 6 -->
-            <div class="swiper-slide">
+            <div class="swiper-slide movie-card">
               <img
                 src="./assets/images/spider-man-no-way-home.jpg"
                 alt="Slide 6"
               />
+              <div class="label-1 label-slider">
+                <span>New Added</span>
+              </div>
+              <div class="card-overlay">
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>6.4</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="label-2">
+                <span>Dual Audio</span>
+              </div>
             </div>
 
             <!-- Add more slides as needed -->
@@ -3044,13 +3140,15 @@
           disableOnInteraction: false,
         },
         speed: 1000,
-        centeredSlides: true /* Centers the current slide */,
-        slidesPerView: 1.15 /* Shows 1 full slide and part of next/previous slides */,
-        spaceBetween: 15 /* Space between slides (in px) */,
+        centeredSlides: true,
         breakpoints: {
           768: {
-            slidesPerView: 3 /* On larger screens, show 3 slides at once */,
-            spaceBetween: 30,
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          0: {
+            slidesPerView: 1.15,
+            spaceBetween: 15,
           },
         },
       });

@@ -149,6 +149,51 @@ header {
   background: var(--light-azure);
 }
 
+.header__menu {
+  position: absolute;
+  width: 24px;
+  height: 22px;
+  display: block;
+  left: 125px;
+  top: 36px;
+}
+.header__menu span {
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: 0.5s;
+  opacity: 1;
+}
+.header__menu span:first-child {
+  top: 0;
+}
+.header__menu span:nth-child(2) {
+  top: 10px;
+  width: 16px;
+}
+.header__menu span:last-child {
+  top: 20px;
+  width: 8px;
+}
+.header__menu--active span {
+  background-color: #2f80ed;
+}
+.header__menu--active span:first-child {
+  transform: rotate(45deg);
+  top: 9px;
+}
+.header__menu--active span:nth-child(2) {
+  opacity: 0;
+}
+.header__menu--active span:last-child {
+  width: 24px;
+  transform: rotate(-45deg);
+  top: 9px;
+}
+
 .sidebar-header {
   display: flex;
   justify-content: space-between;
@@ -490,7 +535,7 @@ nav {
 .filter-radios label {
   position: relative;
   /* margin: 0 10px; */
-  padding: 7px 12px;
+  padding: 7px 7px;
   font-size: var(--fs-sm);
   user-select: none;
   cursor: pointer;
