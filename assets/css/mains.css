@@ -335,6 +335,40 @@ nav {
   transition: 0.3s ease;
 }
 
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: 350px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 15%; /* Position above the button */
+  left: 70%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease-in-out;
+  white-space: nowrap; /* Prevents text from wrapping */
+  z-index: 1000;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* Arrow pointing downwards */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.unlockpro:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
 .navbar-link {
   font-size: var(--fs-sm);
   font-weight: var(--fw-5);
