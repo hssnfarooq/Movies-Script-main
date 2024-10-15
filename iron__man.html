@@ -63,7 +63,7 @@
             <!--
           - menu button for small screen
         -->
-            <button class="navbar-menu-btn header__menu">
+            <button class="navbar-menu-btn hamburger">
               <span class="one"></span>
               <span class="two"></span>
               <span class="three"></span>
@@ -1305,7 +1305,6 @@
 
       const players = Array.from(document.querySelectorAll(".my-video")).map(
         (video) => {
-          console.log(video);
           return new Plyr(video, { captions: { active: true } });
         }
       );

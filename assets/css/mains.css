@@ -149,7 +149,7 @@ header {
   background: var(--light-azure);
 }
 
-.header__menu {
+.hamburger {
   position: absolute;
   width: 24px;
   height: 22px;
@@ -157,7 +157,7 @@ header {
   left: 125px;
   top: 36px;
 }
-.header__menu span {
+.hamburger span {
   position: absolute;
   left: 0;
   width: 24px;
@@ -167,28 +167,28 @@ header {
   transition: 0.5s;
   opacity: 1;
 }
-.header__menu span:first-child {
+.hamburger span:first-child {
   top: 0;
 }
-.header__menu span:nth-child(2) {
+.hamburger span:nth-child(2) {
   top: 10px;
   width: 16px;
 }
-.header__menu span:last-child {
+.hamburger span:last-child {
   top: 20px;
   width: 8px;
 }
-.header__menu--active span {
+.hamburger--active span {
   background-color: #2f80ed;
 }
-.header__menu--active span:first-child {
+.hamburger--active span:first-child {
   transform: rotate(45deg);
   top: 9px;
 }
-.header__menu--active span:nth-child(2) {
+.hamburger--active span:nth-child(2) {
   opacity: 0;
 }
-.header__menu--active span:last-child {
+.hamburger--active span:last-child {
   width: 24px;
   transform: rotate(-45deg);
   top: 9px;
