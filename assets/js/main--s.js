@@ -274,6 +274,7 @@ howto.addEventListener("click", function () {
   modal.innerHTML = `<button class="close-modal">&times;</button>
   <div class="trailer__img__box">
     <video
+      class="my-video"
       width="100%"
       style="border-radius: 25px;"
       controls
@@ -318,11 +319,19 @@ howto.addEventListener("click", function () {
     </video>
   </div>`;
   openModal();
+  const modalVideo = modal.querySelector("video");
+  if (!modalVideo.player) {
+    modalVideo.player = new Plyr(modalVideo, { captions: { active: true } });
+  }
 });
 
 document.addEventListener("click", function (e) {
   if (e.target.classList.contains("close-modal")) {
     closeModal();
+    const modalVideo = modal.querySelector("video");
+    if (modalVideo.player) {
+      modalVideo.player.pause();
+    }
   }
 });
 

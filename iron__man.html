@@ -344,6 +344,7 @@
 
           <div class="trailer__img__box">
             <video
+              class="my-video"
               controls
               crossorigin
               playsinline
@@ -1302,10 +1303,15 @@
         },
       });
 
-      const player = new Plyr("video", { captions: { active: true } });
+      const players = Array.from(document.querySelectorAll(".my-video")).map(
+        (video) => {
+          console.log(video);
+          return new Plyr(video, { captions: { active: true } });
+        }
+      );
 
-      // Expose player so it can be used from the console
-      window.player = player;
+      // Expose players array for console access
+      window.players = players;
     </script>
     <script src="./js/jquery-3.5.1.min.js"></script>
 
