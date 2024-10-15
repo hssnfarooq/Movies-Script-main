@@ -359,6 +359,12 @@
     max-width: 300px;
   }
 
+  .unlockpro-wrapper {
+    margin-top: 200%;
+    padding: 0.8em 0.8rem;
+    margin-left: 0px;
+  }
+
   .header__menu {
     left: 30px;
   }

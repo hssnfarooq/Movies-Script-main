@@ -30,6 +30,18 @@ const searchBarIsActive = () => navbarForm.classList.toggle("active");
 navbarSearchBtn.addEventListener("click", searchBarIsActive);
 navbarFormCloseBtn.addEventListener("click", searchBarIsActive);
 
+const showDropdown = (content, button) => {
+  const dropdownContent = document.getElementById(content),
+    dropdownButton = document.getElementById(button);
+
+  dropdownButton.addEventListener("click", () => {
+    // We add the show-dropdown class, so that the menu is displayed
+    dropdownContent.classList.toggle("show-dropdown");
+  });
+};
+
+showDropdown("dropdown-content", "dropdown-button");
+
 // //////////////////////// modal
 
 /*
