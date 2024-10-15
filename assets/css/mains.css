@@ -611,6 +611,10 @@ nav {
   display: none;
 }
 
+.swiper-slide input {
+  display: none !important;
+}
+
 .swiper-container {
   display: none;
 }
@@ -637,10 +641,6 @@ nav {
 .filter-radios input:checked + label,
 .filter-radios label:hover {
   color: var(--light-azure);
-}
-
-.filter-radios input:checked + label {
-  background: var(--oxford-blue);
 }
 
 /*

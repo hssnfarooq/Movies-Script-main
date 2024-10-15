@@ -111,8 +111,15 @@
           position: fixed;
           bottom: 40px;
           left: 10px;
-          width: 370px;
+          width: 350px;
           height: 40px;
+        }
+
+        .offline-text {
+          width: 105px;
+        }
+        .online-text {
+          width: 180px;
         }
 
         .connection .close {
@@ -147,13 +154,13 @@
     <div class="connections">
       <div class="connection offline">
         <i class="material-icons wifi-off">wifi_off</i>
-        <p>you are currently offline</p>
+        <p class="offline-text">you are currently offline</p>
         <a href="#" class="refreshBtn">Refresh</a>
         <i class="material-icons close">close</i>
       </div>
       <div class="connection online">
         <i class="material-icons wifi">wifi</i>
-        <p>your Internet connection was restored</p>
+        <p class="online-text">your Internet connection was restored</p>
         <i class="material-icons close">close</i>
       </div>
     </div>
