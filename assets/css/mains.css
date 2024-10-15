@@ -345,8 +345,8 @@ nav {
   padding: 8px;
   border-radius: 5px;
   position: absolute;
-  bottom: 15%; /* Position above the button */
-  left: 70%;
+  bottom: 17%; /* Position above the button */
+  left: 55%;
   transform: translateX(-50%);
   transition: opacity 0.3s ease-in-out;
   white-space: nowrap; /* Prevents text from wrapping */
