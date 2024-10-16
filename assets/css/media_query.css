@@ -353,16 +353,16 @@
     width: 100%;
   }
 
-  .slide {
-    margin-left: 10px;
-  }
-
   nav {
     max-width: 300px;
   }
 
   .unlockpro-wrapper {
     padding: 0;
+  }
+
+  .unlock-desktop {
+    display: none;
   }
 
   .hamburger {

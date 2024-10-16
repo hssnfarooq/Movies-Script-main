@@ -272,10 +272,9 @@ btnOpenModal.addEventListener("click", function () {
 });
 howto.addEventListener("click", function () {
   modal.innerHTML = `<button class="close-modal">&times;</button>
-  <div class="trailer__img__box">
+  <div class="trailer__img__box modal-video">
     <video
       class="my-video"
-      width="100%"
       style="border-radius: 25px;"
       controls
       crossorigin

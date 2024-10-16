@@ -720,6 +720,10 @@ ul {
   }
 }
 
+.modal-video {
+  width: 100%;
+}
+
 /* Overlay */
 .overlay {
   position: fixed;
@@ -932,5 +936,8 @@ ul {
   }
   .trailer__img__box {
     width: 90%;
+  }
+  .modal-video {
+    width: 100%;
   }
 }

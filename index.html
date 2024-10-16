@@ -11,13 +11,18 @@
     />
     <title>CineFlix Home</title>
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <!--
     - custom css link
   -->
     <style>
       /* Desktop view */
       .homepage-slider {
-        width: 100%;
+        width: 90%;
         height: 450px; /* Adjust as per your desktop design */
       }
 
@@ -25,18 +30,23 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 20px;
+      }
+
+      .swiper-slide .label-2 {
+        top: 90% !important;
       }
 
       .connection {
         position: fixed;
         bottom: 50px;
         left: 50px;
-        width: 460px;
+        width: 360px;
         height: 70px;
         background: #242526;
         border-radius: 8px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         transform: translateX(-100%);
         opacity: 0;
@@ -57,7 +67,7 @@
       }
       .connection .wifi-off {
         margin-right: 20px;
-        font-size: 18px;
+        font-size: 26px;
         color: #7c7c7c;
       }
       .connection .close {
@@ -73,11 +83,12 @@
         cursor: pointer;
       }
       .connection .wifi {
-        color: #029702;
-        font-size: 18px;
+        color: #0769aa;
+        font-size: 26px;
         margin-right: 20px;
       }
       .online.active {
+        width: 420px;
         transform: translateX(0%);
         opacity: 1;
         pointer-events: auto;
@@ -107,27 +118,18 @@
           justify-content: center;
         }
 
+        .swiper-slide .label-2 {
+          top: 86% !important;
+        }
+
         .connection {
-          position: fixed;
-          bottom: 40px;
-          left: 10px;
-          width: 350px;
-          height: 40px;
+          left: 0;
+          justify-content: flex-start;
+          transform: translateX(-50%);
         }
-
-        .offline-text {
-          width: 105px;
-        }
-        .online-text {
-          width: 180px;
-        }
-
-        .connection .close {
-          margin-left: 20px;
-          width: 20px;
-          height: 20px;
-          line-height: 20px;
-          font-size: 16px;
+        .wifi,
+        .wifi-off {
+          margin-left: 10px;
         }
       }
     </style>
@@ -247,6 +249,16 @@
 
             <button class="navbar-search-btn">
               <ion-icon name="search-outline"></ion-icon>
+            </button>
+
+            <button class="unlockpro unlock-desktop">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+                <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+              </svg>
+              Unlock Pro
+              <span class="tooltip tooltip-desktop"
+                >This feature is not available at the moment</span
+              >
             </button>
           </div>
         </div>
@@ -3147,7 +3159,7 @@
           if (closeBtn[i].parentNode.classList.contains("offline")) {
             setTimeout(() => {
               closeBtn[i].parentNode.classList.add("active");
-            }, 500);
+            }, 5000);
           }
         });
       }
@@ -3172,12 +3184,12 @@
           delay: 3000,
           disableOnInteraction: false,
         },
-        speed: 1000,
+        speed: 500,
         centeredSlides: true,
         breakpoints: {
           768: {
-            slidesPerView: 1,
-            spaceBetween: 10,
+            slidesPerView: 1.15,
+            spaceBetween: 30,
           },
           0: {
             slidesPerView: 1.15,
