@@ -342,7 +342,7 @@ nav {
   padding: 8px;
   border-radius: 5px;
   position: absolute;
-  bottom: 14%; /* Position above the button */
+  bottom: 8%; /* Position above the button */
   left: 60%;
   transform: translateX(-50%);
   transition: opacity 0.3s ease-in-out;
