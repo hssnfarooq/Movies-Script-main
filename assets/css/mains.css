@@ -114,8 +114,8 @@ header {
 .navbar-menu-btn {
   display: block;
   position: absolute;
-  top: 50%;
-  left: var(--px);
+  /* top: 50%;
+  left: var(--px); */
   transform: translateY(-50%);
 }
 
@@ -154,8 +154,6 @@ header {
   width: 24px;
   height: 22px;
   display: block;
-  left: 115px;
-  top: 36px;
 }
 .hamburger span {
   position: absolute;
@@ -192,6 +190,10 @@ header {
   width: 24px;
   transform: rotate(-45deg);
   top: 9px;
+}
+
+.hamburger:hover span {
+  background: var(--light-azure);
 }
 
 .sidebar-header {
